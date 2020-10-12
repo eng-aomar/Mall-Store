@@ -15,49 +15,49 @@ An application that is built over some design patterns
   - Enumeration stores() - returns an enumeration of the stores in the mall
   - void addStore(Store s) - add a store to the mall
 - Store
-o Abstract superclass for a store
-o Notable Attributes:
-§ name - the name of the store
-§ id - unique ID for the store
-§ items - items available for sale in the store
-§ customers - the customers currently in the store
-§ observers - the observers of the store
-o Possible Methods:
-§ abstract void enter(Customer c) - customer c enters the store
-§ abstract void exit(Customer c) - customer c exits the store
-§ Enumeration customers() - returns an enumeration of the customers in the
-store
-§ Enumeration items() - returns an enumeration of the items available for sale
+  - Abstract superclass for a store
+  * Notable Attributes:
+  - name - the name of the store
+  - id - unique ID for the store
+  - items - items available for sale in the store
+  - customers - the customers currently in the store
+  - observers - the observers of the store
+  * Possible Methods:
+  - abstract void enter(Customer c) - customer c enters the store
+  - abstract void exit(Customer c) - customer c exits the store
+  - Enumeration customers() - returns an enumeration of the customers in the
+- store
+  - Enumeration items() - returns an enumeration of the items available for sale
 in the store
-§ void addObserver(Osberver o) - add an observer to the store
-• BookStore
-o A possible subclass of Store
-• ShoeStore
-o A possible subclass of Store
-• GameStore
-o A possible subclass of Store
-• Item
-o An item for sale in a store
-o Notable Attributes:
-§ name - the name of the item
-§ id - unique ID for the item
-§ storeId - the ID of the store from which the item came
-§ price - the price of the item
+ - void addObserver(Osberver o) - add an observer to the store
+- BookStore
+  - A possible subclass of Store
+  • ShoeStore
+  - A possible subclass of Store
+  • GameStore
+  - A possible subclass of Store
+  • Item
+  - An item for sale in a store
+* Notable Attributes:
+  - name - the name of the item
+  - id - unique ID for the item
+  - storeId - the ID of the store from which the item came
+  - price - the price of the item
 • Customer
-o A customer!
-o Notable Attributes:
-§ name - the name of the customer
-§ shoppingCart - the shopping cart being used by the customer
-§ store - the store the customer is currently in
-• ShoppingCart
-o A shopping cart for the customer
-o Notable Attributes:
-§ items - items currently in the shopping cart
-o Possible Methods:
-§ Enumeration items() - returns an enumeration of the items currently in the
+  - A customer!
+  * Notable Attributes:
+  - name - the name of the customer
+    - shoppingCart - the shopping cart being used by the customer
+    - store - the store the customer is currently in
+    - ShoppingCart
+-A shopping cart for the customer
+- Notable Attributes:
+- items - items currently in the shopping cart
+- Possible Methods:
+- Enumeration items() - returns an enumeration of the items currently in the
 cart
-§ void addItem(item) - add an item to the shopping cart
-§ void removeItem(item) - remove an item from the shopping cart
+- void addItem(item) - add an item to the shopping cart
+- void removeItem(item) - remove an item from the shopping cart
 Note that required accessors and mutators are not listed in the above for the sake of brevity.
 
 ## Project	Requirements	
