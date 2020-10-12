@@ -1,6 +1,8 @@
 # Mall-Store
 An application that is built over some design patterns
 
+
+![The Mall Store Class Diagram](https://github.com/eng-aomar/Mall-Store/blob/master/mall.JPG)
 - Mall
   - The mall itself.
   - Notable Attributes:
